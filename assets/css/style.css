@@ -1,0 +1,334 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: Poppins;
+}
+.relative_container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.nowrap{
+	white-space: nowrap;
+}
+.center_item{
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+.center_item_vertically{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+}
+.center_item_horizontally{
+    position: absolute;
+    left: 50% !important;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+}
+.clear-both{
+	clear: both;
+}
+.loaderContainer{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	margin-top: 20px;
+}
+.page_container{
+	width: 100%;
+	height: 100vh;
+}
+#page-loading{
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	position: absolute;
+	background: #FFF;
+}
+#page-loading .center_item_vertically{
+	width: 100%;
+	height: auto;
+	top: 45%;
+}
+#page-loading .icon{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	background: url(../images/logo-sureremit.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 35px;
+}
+
+.header{
+	width: 80%;
+	height: 28px;
+	margin: auto;
+	padding-top: 40px;
+}
+.header .logo{
+	width: 200px;
+    height: 92%;
+    float: left;
+    background: url(../images/logo-sureremit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+}
+.header .links{
+	width: calc(100% - 200px);
+	height: 100%;
+	float: left;
+	text-align: right;
+	position: relative;
+}
+.header .links a{
+	text-decoration: none;
+}
+.header .links .link{
+	width: auto;
+    padding: 8px 35px 6px;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    display: inline-block;
+    color: #de5019;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid #FFF;
+}
+.header .links .link.emphasis{
+    border: 1px solid #de5019;
+}
+.header .links .link:hover{
+	background: #EEE;
+	border: 1px solid #FFF;
+	color: #000;
+}
+.mobile_toggle{
+	display: none;
+}
+.copy_area{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	margin-bottom: 40px;
+}
+.copy_area .text{
+	width: 80%;
+    height: auto;
+    margin: auto;
+    font-size: 2.0rem;
+    color: #000;
+    padding-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.copy_area .app_links{
+	width: 100%;
+	height: 45px;
+	text-align: center;
+}
+.copy_area .app_links .app_link{
+	width: auto;
+	height: 45px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.copy_area .app_links .app_link:last-of-type{
+	margin-left: 5px;
+}
+.copy_area .app_links .app_link img{
+	width: auto;
+	height: 45px;
+}
+.app_showcase{
+    width: 80%;
+    height: 850px;
+    margin: auto;
+    background: url(../images/showcase.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.strong_points{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	margin-bottom: 60px;
+}
+.strong_points .strong_point{
+	width: calc((100% - 80px) / 3);
+	height: auto;
+	float: left;
+	margin-right: 40px;
+}
+.strong_points .strong_point:nth-of-type(3n){
+	margin-right: 0;
+}
+.strong_points .strong_point .head{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+}
+.strong_points .strong_point .head .number{
+	width: 50px;
+	height: 100%;
+	float: left;
+	color: #de5019;
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-right: 20px;
+}
+.strong_points .strong_point .head .point{
+	width: calc(100% - 70px);
+	height: calc(100% - 10px);
+	float: left;
+	line-height: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+.strong_points .strong_point .desc{
+	width: 100%;
+	height: auto;
+	text-align: justify;
+	color: #666;
+}
+.footer{
+	width: 100%;
+	height: 370px;
+	background: #DE5019;
+	border-top: 12px solid #C74816;
+}
+.footer .content{
+	width: 80%;
+	height: 370px;
+	margin: auto;
+}
+.footer .content .footer_section{
+	width: calc((70% - 100px) / 2);
+	height: 250px;
+	margin: auto;
+	margin-right: 50px;
+	float: left;
+	padding-top: 100px;
+	position: relative;
+}
+.footer .content .footer_section a{
+	text-decoration: none !important;
+	color: #FFF;
+}
+.footer .content .footer_section .footer_logo{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	top: 40px;
+	background: url(../images/logo-sureremit-white.png);
+	background-repeat: no-repeat;
+	background-size: auto 30px;
+}
+.footer .content .footer_section.smaller{
+	width: calc((30% - 50px) / 2);
+}
+.footer .content .footer_section .copyright{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 50px;
+	color: #FFF;
+	font-size: 0.8rem;
+	opacity: 0.8;
+}
+.footer .content .footer_section:nth-of-type(4n){
+	margin-right: 0;
+}
+.footer .content .footer_section .topic{
+	width: 100%;
+	height: 40px;
+	font-size: 0.9rem;
+	color: #FFF;
+	font-weight: 500;
+}
+.footer .content .footer_section .desc{
+	width: 100%;
+    height: auto;
+    font-size: 0.8rem;
+    color: #FFF;
+    opacity: 0.7;
+    text-align: justify;
+}
+.social{
+	width: calc(100% / 4);
+	height: 50px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.social:hover{
+	opacity: 0.7;
+}
+.footer_section.smaller .desc{
+	opacity: 1 !important;
+}
+.social i{
+	font-size: 1.3rem;
+}
+.mobile_links{
+	display: none;
+}
+.footer_section .form{
+	margin-top: 20px;
+	width: 100%;
+	height: 45px;
+}
+.footer_section .form div{
+	float: left;
+}
+.footer_section .form div:first-of-type{
+	width: calc(100% - 55px);
+	height: 45px;
+	margin-right: 10px;
+}
+.footer_section .form div:first-of-type input{
+	width: calc(100% - 15px);
+	height: 100%;
+	border: none;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 45px;
+	padding-left: 15px;
+	outline: none;
+	color: #FFF;
+	font-size: 0.95rem;
+}
+.footer_section .form div:first-of-type input::placeholder{
+	color: #FFF;
+	font-size: 1rem;
+}
+.footer_section .form div:last-of-type{
+	width: 45px;
+	height: 45px;
+}
+.footer_section .form div:last-of-type button{
+	width: 45px;
+	height: 45px;
+	background: transparent;
+	border: 1px solid #FFF;
+	border-radius: 45px;
+	position: relative;
+}
+.footer_section .form div:last-of-type button i{
+	font-size: 2.8rem;
+    color: #FFF;
+}
